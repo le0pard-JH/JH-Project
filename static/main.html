@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>main</title>
+
+<link href="https://fonts.googleapis.com/css?family=Jua&display=swap"
+	rel="stylesheet">
+	  <link rel="stylesheet" href="/css/main.css">
+  <script  src="/js/menubar.js"></script>
+
+
+
+<style>
+body {
+	text-shadow: 1px 1px black;
+	color: azure;
+	margin: 0;
+	padding: 5px;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(https://cdn.pixabay.com/photo/2016/05/06/05/47/heart-rate-1375322_960_720.png);
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	font-family: "Jua";
+	text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+
+ <div class="left">
+		<input type="text" class ="header" value="H I S" onclick="movepage_5()">
+		<h1>Hospital Informaion System</h1>
+	</div>
+	 <div class="right">
+  <div id="menubar">
+
+    <input type="text" class ="abc" value="▶ 의료 채팅" onclick="movepage()" >
+		<input type="text" class ="abc" value="▶ 환자 검진" onclick="movepage_2()">
+		<input type="text" class ="abc" value="▶ 약품 정보 찾기" onclick="movepage_4()">
+
+
+  </div>
+</div>
+
+
+</body>
+</html>

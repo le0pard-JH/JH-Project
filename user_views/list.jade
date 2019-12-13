@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+      meta(charset='utf-8')
+      link(href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet")
+      - const bodyStyles ={"background" : "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(http://grassone90.cafe24.com/web/upload/NNEditor/20170620/3O9A9637_shop1_132053.jpg)"};
+      script(src="/js/menubar.js")
+      link(rel="stylesheet" href="/css/menubar.css")
+
+
+  body(style=bodyStyles)
+    header
+      input(type="text" class="header" value="H I S" onclick="movepage_5()")
+    nav#menubar
+        ul
+          li
+            input(type="text" class="abc" value="의료 채팅" onclick="movepage()")
+          li
+            input(type="text" class="abc" value="환자 검진" onclick="movepage_2()")
+
+          li
+            input(type="text" class="abc" value="약품 정보 찾기" onclick="movepage_4()")
+
+
+    - const pStyles = {"color":"red", "text-align":"center", "font-size":"80px", "font-family":"Jua" ,"margin-top":"0","margin-bottom":"0"};
+    - const liStyles = {"color":"#ffffff", "text-align":"center", "margin-left":"40%", "font-size":"30px", "font-family":"Jua"};
+    - const btnStyles = {"text-align":"center", "margin-left":"40%", "font-size":"60px", "font-family":"Jua"};
+    p(style=pStyles)  환자 리스트
+    ul
+      each good in goods
+        li
+            a(style=liStyles, class="abc" href='/goods/'+good)= good
+    artcle
+        a(style=btnStyles, class="abc" ,href='/goods/add') 새 환자 등록 >

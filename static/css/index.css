@@ -1,0 +1,86 @@
+/* 메인 */
+
+#main {
+  margin: auto;
+  margin-top: 0;
+  border-radius: 20px;
+  background-color: lightblue;
+  text-align: center;
+  width: 50%;
+  height: 700px;
+
+  text-shadow: 1px 1px black;
+
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(http://grassone90.cafe24.com/web/upload/NNEditor/20170620/3O9A9637_shop1_132053.jpg);
+
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+
+
+  font-family: "Jua";
+}
+
+/* 채팅 영역 */
+#chat {
+  height: 90%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+
+
+/* 접속 알림 */
+.connect {
+  width: 90%;
+  margin: auto;
+  background-color: aquamarine;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* 접속 종료 알림 */
+.disconnect {
+  width: 90%;
+  margin: auto;
+  background-color: indianred;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* 내가 보낸 메시지 */
+.me {
+  width: 20%;
+  margin-right: 70%;
+  margin-left: 20%;
+  background-color: lemonchiffon;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* 상대방이 보낸 메시지 */
+.other {
+  width: 20%;
+  background-color: white;
+  margin-left: 70%;
+  margin-right: 50%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/*텍스트박스 */
+.textbox input[type="text"]{
+  width: 80%; /* 원하는 너비 설정 */
+  height: 10px; /* 높이값 초기화 */
+  padding: .8em .5em; /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+}
+
+.textbox button{
+  height: 50px;
+  width: 100px;
+}

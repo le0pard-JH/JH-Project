@@ -1,0 +1,112 @@
+<<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>의료 정보 찾기</title>
+    <link rel="stylesheet" href="/css/menubar.css">
+    <script src="/js/menubar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Jua&display=swap);
+
+      body {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(http://grassone90.cafe24.com/web/upload/NNEditor/20170620/3O9A9637_shop1_132053.jpg);
+
+      }
+
+      .fontcolor {
+        color: white;
+        font-family: "Jua";
+        font-size: 25px;
+        text-align: left;
+        margin-left: 25%;
+      }
+
+      .textbox {
+        width: 50%;
+        /* 원하는 너비 설정 */
+        height: 20px;
+        /* 높이값 초기화 */
+        padding: .8em .5em;
+        /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+      }
+
+      .textbtn {
+        height: 40px;
+        width: 100px;
+      }
+
+      .nametag {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <br>
+    <header>
+      <input type="text" class="header" value="H I S" onclick="movepage_5()">
+    </header>
+
+    <nav id="menubar">
+      <ul>
+        <li><input type="text" class="abc" value="의료 채팅" onclick="movepage()"></li>
+        <li><input type="text" class="abc" value="환자 검진" onclick="movepage_2()"></li>
+        <li><input type="text" class="abc" value="약품 정보 찾기" onclick="movepage_4()"></li>
+      </ul>
+    </nav><br><br>
+    <div class="fontcolor">
+      <form action="/hospital" method="post">
+        <input class="textbox" name="search" type="text" />
+        <input class="textbtn" value="검색" type="submit" />
+      </form>
+
+      <% if(count != 1) { %>
+      <section>
+        <% for(var i = 0; i < count; i++){ %>
+        <details>
+          <summary class="nametag"><%= name[i] %></summary><br>
+
+          <%= "일련번호 : " + seq[i] %><br>
+          <%= "제약회사 : " + entp[i] %><br>
+          <%= "제제 : " + chart[i] %><br>
+          <%= "모양 : " + shape[i] %><br>
+          <%= "색깔 : " + color[i] %><br>
+          <%= "용제 : " + cname[i] %><br>
+          <%= "약품 구분 : " + eotc[i] %><br>
+          <%= "포장형태 : " + form[i] %><br>
+          <%= "보험 코드 : " + edi[i] %><br><br>
+
+          <% if(img[i] != undefined) { %>
+          <img src="<%= img[i] %>" width="250px" height="200px"><br><br><br>
+          <% } %>
+
+        </details>
+        <% } %>
+      </section>
+      <% } else { %>
+      <p>검색 결과</p>
+      <p><b><%= name %></b></p>
+      <p><%= seq %></p>
+      <details>
+        <p><%= entp[i] %></p>
+        <p><%= chart[i] %></p>
+        <p><%= shape[i] %></p>
+        <p><%= color[i] %></p>
+        <p><%= cname[i] %></p>
+        <p><%= eotc[i] %></p>
+        <p><%= form[i] %></p>
+        <p><%= edi[i] %></p>
+        <% if(img != undefined) { %>
+        <summary>
+          <img src="<%= img %>" width="250px" height="200px"></summary>
+        <% } %>
+        <% } %>
+      </details>
+    </div>
+  </body>
+
+  </html>

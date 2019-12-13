@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    link(href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet")
+    - const bodyStyles =  {"background" : "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(http://grassone90.cafe24.com/web/upload/NNEditor/20170620/3O9A9637_shop1_132053.jpg)"};
+    script(src="/js/menubar.js")
+    link(rel="stylesheet" href="/css/menubar.css")
+
+
+  body(style=bodyStyles)
+    header
+      input(type="text" class="header" value="H I S" onclick="movepage_5()")
+    nav#menubar
+        ul
+          li
+            input(type="text" class="abc" value="의료 채팅" onclick="movepage()")
+          li
+            input(type="text" class="abc" value="환자 검진" onclick="movepage_2()")
+
+          li
+            input(type="text" class="abc" value="약품 정보 찾기" onclick="movepage_4()")
+
+
+  - const pStyles = {"color":"red", "text-align":"center", "font-size":"80px", "font-family":"Jua" ,"margin-top":"0","margin-bottom":"0"};
+  - const inputStyles = {"text-align":"center", "margin-left":"40%","height":"30px", "width":"250px"}
+  - const btnStyles = {"text-align":"center", "margin-left":"40%", "font-size":"60px", "font-family":"Jua"};
+  - const liStyles = {"color":"#ffffff", "text-align":"center", "font-size":"50px", "font-family":"Jua", "margin-bottom":"0","margin-top":"0" };
+  - const li2Styles = {"color":"#ffffff", "text-align":"center", "font-size":"30px", "font-family":"Jua","margin-top":"0"};
+
+  p(style=pStyles) 환자 내역 조회
+      p(style=liStyles) 환자 이름 :
+        p(style=li2Styles)= title
+      p(style=liStyles) 검진 내역 :
+        p(style=li2Styles)= description
+a(style=btnStyles, class="abc", href='/goods/'+title+'/edit') 환자정보수정 >
+form(action='/goods/'+title+'/delete' method='post')
+  p
+    input(style=inputStyles type='submit' value='정보삭제')

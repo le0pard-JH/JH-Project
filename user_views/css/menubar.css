@@ -1,0 +1,69 @@
+#menubar {
+	background: olive;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+		font-family: "Jua";
+}
+
+#menubar ul {
+	text-align: center;
+	width: 100%;
+	font-family: "Jua";
+
+}
+
+#menubar ul li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0px 60px;
+	font-family: "Jua";
+}
+
+
+.header {
+	width: 100%;
+	height: 70px;
+	background: black;
+	color: olive;
+	font-size: 50px;
+	text-align: center;
+	table-layout: fixed;
+	background-color: rgba(255,255,255,0);
+	border: none;
+		font-family: "Jua";
+}
+
+.header:hover{
+	text-decoration: underline;
+		color: violet;
+
+}
+
+.abc{
+		background-color: rgba(255,255,255,0);
+		border: none;
+			font-family: "Jua";
+			font-size: 20px;
+}
+
+.abc:link {
+	text-decoration: none;
+	color: olive;
+}
+
+.abc:visited {
+	text-decoration: none;
+	color: olive;
+}
+
+.abc:active {
+	text-decoration: none;
+	color: olive;
+}
+
+.abc:hover {
+
+	text-decoration: underline;
+		color: violet;
+}

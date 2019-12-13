@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>의료 채팅</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="/css/menubar.css">
+  <script src="/js/menubar.js"></script>
+
+
+
+
+    <style>
+
+    @import url(https://fonts.googleapis.com/css?family=Jua&display=swap);
+
+body{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(http://grassone90.cafe24.com/web/upload/NNEditor/20170620/3O9A9637_shop1_132053.jpg);
+}
+
+
+    </style>
+
+  </head>
+  <body>
+    <br>
+    <header >
+      <input type="text" class ="header" value="H I S" onclick="movepage_5()">
+    </header>
+    <nav id="menubar">
+      <ul>
+
+        <li><input type="text" class ="abc" value="의료 채팅" onclick="movepage()" ></li>
+        <li><input type="text" class ="abc" value="환자 검진" onclick="movepage_2()"></li>
+        <li><input type="text" class ="abc" value="약품 정보 찾기" onclick="movepage_4()"></li>
+      </ul>
+
+    </nav><br><br>
+
+
+
+    <div id="main">
+      <div id="chat">
+        <!-- 채팅 메시지 영역 -->
+      </div>
+        <div class="textbox">
+            <input type="text" id="test" placeholder="메시지를 입력해주세요.." onKeyDown="onKeyDown();" onmouseover="over();">
+        <button onclick="send()">전송</button>
+      </div>
+    </div>
+  </body>
+</html>

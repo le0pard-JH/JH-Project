@@ -1,0 +1,76 @@
+.header {
+	width: 100%;
+	background: black;
+	color: white;
+	font-size: 23vh;
+	text-align: left;
+  margin-top: 30%;
+  margin-left: 30%;
+	table-layout: fixed;
+	background-color: rgba(255,255,255,0);
+	border: none;
+		font-family: "Jua";
+}
+
+.header:hover{
+	text-decoration: underline;
+		color: violet;
+
+}
+  div {
+       width: 100%;
+       height: auto;
+
+
+   }
+   div.left {
+       width: 50%;
+       float: left;
+       box-sizing: border-box;
+
+   }
+   div.right {
+       width: 50%;
+       float: right;
+       margin-top: 15%;
+       box-sizing: border-box;
+
+
+   }
+
+.abc{
+		background-color: rgba(255,255,255,0);
+		border: none;
+
+    color: white;
+    width: 55%;
+    margin-right: 30%;
+  	text-align: left;
+    font-family: "Jua";
+		font-size: 5vh;
+    margin-top: 15px;
+}
+
+.abc:link {
+	text-decoration: none;
+	color: white;
+      	text-align: left;
+}
+
+.abc:visited {
+	text-decoration: none;
+	color: white;
+      	text-align: left;
+}
+
+.abc:active {
+	text-decoration: none;
+	color: white;
+      	text-align: left;
+}
+
+.abc:hover {
+
+	text-decoration: underline;
+		color: violet;
+}
