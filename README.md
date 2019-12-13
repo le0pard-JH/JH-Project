@@ -1,6 +1,6 @@
 # How to use JH-Project (HIS)
 
-#### This is Our ***TCP/IP Project*** and this is Our ***Team Members***.
+#### This is Our 2019-2 3rd Grade ***TCP/IP Project*** and Our ***Team Members***.
 
 >**Team Leader**  
 >1560058 Hwang, Joo-Ho
@@ -25,4 +25,4 @@
 >1. 터미널을 이용하여 `/JH-Project` 디렉토리로 이동한다.
 >2. 터미널에서 `npm install` 을 입력하여 서버 구동 및 이용에 필요한 모듈을 설치한다.
 >3. 터미널에서 `node app.js` 을 입력하여 서버를 구동한다.
->4. 브라우저를 (Google Chrome 추천) 이용하여 <br> `https://localhost:8080`, `https://127.0.0.2:8080/`<br> 에 접속하거나 외부에서 접근시 `https://<IP 주소>:<PORT 번호>/` 를 이용해 접속한다.
+>4. 브라우저를 (Google Chrome 추천) 이용하여 `https://localhost:8080`, `https://127.0.0.2:8080/` 에 접속하거나 <br> 외부에서 접근시 `https://<IP 주소>:<PORT 번호>/` 를 이용해 접속한다.
